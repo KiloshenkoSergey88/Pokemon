@@ -7,15 +7,3 @@ body {
     background-color: lightblue;
     
 }
-
-#pageTwo {
-    display: none;
-    align-items: center;
-    align-content: center; 
-    justify-content: center; 
-}
-
-.ww {
-    width: 100vw;
-    height: 100vh;
-}

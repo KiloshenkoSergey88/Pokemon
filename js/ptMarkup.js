@@ -1,4 +1,1 @@
-
-export function hello() {
-    return "Hello";
-}
+console.log('111');
