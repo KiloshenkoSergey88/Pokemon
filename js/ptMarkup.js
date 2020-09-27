@@ -1,21 +1,25 @@
-const markup = document.getElementsByClassName('sidePt');
+const img = 
+    ['./img/000Bulbasaur.png',
+    './img/001Ivysaur.png',
+    './img/002Venusaur.png'];
 
+let markup = document.getElementsByClassName('sidePt');
 
-function Card() {
+function Card(img) {
   let fragment = new DocumentFragment();
 
-  for(let i = 0; i < 95; i++) {
+  for(let i = 0; i < 150; i++) {
     let card = document.createElement('sidePt');
     card.className = 'card';
 
     fragment.append(card);
     
   }
-  let img = ['./img/Bulbasaur.png','./img/C.png'].sort(()=>Math.random() - 0.5);
-	document.querySelectorAll('.card').forEach((el,i)=>el.insertAdjacentHTML('beforeend', `<img src="${img[i]}" height="80" width="80">`));
+  
+	document.querySelectorAll('.card').forEach((card,i,)=>card.insertAdjacentHTML('beforeend', `<img src="${img[i]}" height="80" width="80">`));
   return fragment;
 }
 
-markup[0].append(Card());
-markup[1].append(Card());
+markup[0].append(Card(img));
+markup[1].append(Card(img));
 console.log(document.querySelector('.card'));

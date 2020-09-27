@@ -5,6 +5,9 @@
     justify-content: center; 
     background-color: orangered;
 }
+.dataPlayerPt {
+    min-height: 100px;
+}
 
 .sidePt {
     width: 100%;
@@ -17,9 +20,10 @@
     position: absolute;
     background-color: inherit;
     border: 1px outset black;
-    margin-top: 65em;
-    height: 30px;
-    width: 55px;
+    margin-top: 0.5%;
+    margin-left: 50%;
+    height: 50px;
+    width: 200px;
     cursor: pointer;
 }
 #change:active{
@@ -37,7 +41,7 @@
 }
 
 .card {
-    height: 120px;
+    height: 80px;
     width: 80px;
     display: inherit;
     align-items: center;
