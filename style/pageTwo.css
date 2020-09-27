@@ -8,4 +8,16 @@
 .sidePt {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 120px;
+    width: 80px;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
 }
