@@ -5,7 +5,7 @@
     justify-content: center; 
     background-color: orangered;
 }
-.dataPlayerPt {
+#dataPlayerPt {
     min-height: 100px;
 }
 
@@ -41,11 +41,19 @@
 }
 
 .card {
-    height: 80px;
+    height: 100px;
     width: 80px;
     display: inherit;
     align-items: center;
     justify-content: center;
     margin: 10px;
+    cursor: pointer;
+}
 
+.card:active {
+    border: 1px solid blueviolet;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 94px;
+    width: 74px;
 }
