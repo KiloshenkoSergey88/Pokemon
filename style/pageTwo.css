@@ -9,35 +9,27 @@
     min-height: 100px;
 }
 
-.sidePt {
+#sidePt {
     width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
+.botButton {
+    display: flex;
+    justify-content: center;
+}
 #change {
-    position: absolute;
-    background-color: inherit;
-    border: 1px outset black;
-    margin-top: 0.5%;
-    margin-left: 50%;
     height: 50px;
-    width: 200px;
+    width: 100px;
+    background: fixed;
+    border: 1px outset black;
     cursor: pointer;
 }
 #change:active{
     padding-top:2px;
     padding-left:2px;
-}
-
-.right {
-    display: none;
-    background-color: rgb(109, 143, 177);
-}
-
-.left {
-    background-color: orangered;
 }
 
 .card {
