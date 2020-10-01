@@ -1,4 +1,4 @@
-/* 0 уровень */
+/* страница 2. */
 #pageTwo {
     display: none;
     align-items: center;
@@ -6,25 +6,25 @@
     justify-content: center; 
     background-color: orangered;
 }
-/*  1 уровень */
+/*  блок  для добавления персонажей игроку для игры. */
 #dataPlayerPt {
     min-height: 100px;
     display: flex;
     flex-wrap: wrap;
 }
-/* 1 уровень */
+/* блок с карточками. */
 #sidePt {
     width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-/* 1 уровень */
+/* нижний блок для кнопки. */
 .botButton {
     display: flex;
     justify-content: center;
 }
-/* 3 уровень */
+/* кнопка выбора. */
 #change {
     height: 50px;
     width: 100px;
@@ -36,7 +36,7 @@
     padding-top:2px;
     padding-left:2px;
 }
-/* 2 уровень */
+/* блок карточка. */
 .card {
     height: 80px;
     width: 80px;
@@ -49,7 +49,8 @@
     padding-left: 4px;
     height: 74px;
     width: 74px;
-}
+} 
+/* блок с карточкой в блоке доб. персонажей игроку для игры. */
 .addCard {
     height: 80px;
     width: 80px;
