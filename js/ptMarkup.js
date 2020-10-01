@@ -41,7 +41,7 @@ document.querySelectorAll('.card').forEach((el) => {
     if (count < 3) {
       count++;
       let addCard = e.srcElement;
-      let dataPlayerPt = document.getElementById('dataPlayerPt');
+      let dataPlayerPt = document.querySelector('.blockPlayerFirstPt');
       dataPlayerPt.append(addCard);
       // отключение обработчика и визуализации добавленной карты (под средством смены класса у объекта).
       el.onclick = null;

@@ -6,11 +6,10 @@
     justify-content: center; 
     background-color: orangered;
 }
-/*  блок  для добавления персонажей игроку для игры. */
+/*  блок для добавления персонажей игроку для игры. */
 #dataPlayerPt {
-    min-height: 100px;
+    min-height: 120px;
     display: flex;
-    flex-wrap: wrap;
 }
 /* блок с карточками. */
 #sidePt {
@@ -56,3 +55,17 @@
     width: 80px;
     margin: 5px;
 }
+
+
+/* CSS селекторы дочерних блоков добавления персонажей игроку для игры (dataPlayerPt). */
+/* блок выбора первого игрока */
+
+/* блок выбора второго игрока */
+
+/* класс для блоков выбора игроков */
+.blockPlayer {
+    width: 50%;
+    border: 2px solid blueviolet;
+    display: inherit;
+}
+
