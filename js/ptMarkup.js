@@ -1,4 +1,5 @@
-const img = 
+// данные для отображения карточек персонажей.
+const data = 
     ['./img/000Bulbasaur.png',
     './img/001Ivysaur.png',
     './img/002Venusaur.png',
@@ -13,6 +14,7 @@ const img =
     './img/011Butterfree.png',
     './img/012Weedle.png'];
 
+    // создание карточек на основе добавления елемента "img" в ДОМ-дерево.
 let markup = document.getElementById('sidePt');
 
 function Card() {
@@ -20,18 +22,30 @@ function Card() {
 
   for(let i = 0; i < 150; i++) {
     
-    let card = document.createElement('div');
+    let card = document.createElement('img');
 
     card.className = 'card';
     card.id = `${i}`;
+    card.src=`${data[i]}`;
     fragment.append(card);
-    
   };
-  
   return fragment;
-  
 };
 markup.append(Card());
-document.querySelectorAll('.card').forEach((card,i,)=>card.insertAdjacentHTML('beforeend', `<img src='${img[i]}' height="80" width="80">`));
 
-
+// count переменная-счетчик для определения выбора количевства персонажей для игры.
+// обработчик событий на класс 'card' при нажатии на карту - переносит ёё в блок к игроку.
+let count = 0;
+document.querySelectorAll('.card').forEach((el) => {
+  el.onclick = function(e) {
+    if (count < 3) {
+      count++;
+      let addCard = e.srcElement;
+      let dataPlayerPt = document.getElementById('dataPlayerPt');
+      dataPlayerPt.append(addCard);
+      // отключение обработчика и визуализации добавленной карты (под средством смены класса у объекта).
+      el.onclick = null;
+      el.className = 'addCard';
+    };
+  };
+});

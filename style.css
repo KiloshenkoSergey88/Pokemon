@@ -1,7 +1,10 @@
+/* удаление отступов.  */
 * {
     margin: 0;
     padding: 0;
 } 
+
+/* цвет основного фона.  */
 
 body {
     background-color:orangered;

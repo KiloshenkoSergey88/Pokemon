@@ -1,3 +1,4 @@
+/* 0 уровень */
 #pageTwo {
     display: none;
     align-items: center;
@@ -5,21 +6,25 @@
     justify-content: center; 
     background-color: orangered;
 }
+/*  1 уровень */
 #dataPlayerPt {
     min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
-
+/* 1 уровень */
 #sidePt {
     width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-
+/* 1 уровень */
 .botButton {
     display: flex;
     justify-content: center;
 }
+/* 3 уровень */
 #change {
     height: 50px;
     width: 100px;
@@ -31,21 +36,22 @@
     padding-top:2px;
     padding-left:2px;
 }
-
+/* 2 уровень */
 .card {
-    height: 100px;
+    height: 80px;
     width: 80px;
-    display: inherit;
-    align-items: center;
-    justify-content: center;
     margin: 10px;
     cursor: pointer;
 }
-
 .card:active {
     border: 1px solid blueviolet;
     padding-top: 4px;
     padding-left: 4px;
-    height: 94px;
+    height: 74px;
     width: 74px;
+}
+.addCard {
+    height: 80px;
+    width: 80px;
+    margin: 5px;
 }
