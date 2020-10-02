@@ -24,18 +24,18 @@
     justify-content: center;
 }
 /* 2 кнопки выбора. */
-.changeOnePl {
+#changeOnePl {
     height: 50px;
     width: 100px;
     background: fixed;
     border: 1px outset black;
     cursor: pointer;
 }
-.changeOnePl:active{
+#changeOnePl:active{
     padding-top:2px;
     padding-left:2px;
 }
-.changeTwoPl {
+#changeTwoPl {
     height: 50px;
     width: 100px;
     background: fixed;
@@ -43,7 +43,7 @@
     cursor: pointer;
     display: none;
 }
-.changeTwoPl:active{
+#changeTwoPl:active{
     padding-top:2px;
     padding-left:2px;
 }
@@ -67,13 +67,6 @@
     width: 80px;
     margin: 5px;
 }
-
-
-/* CSS селекторы дочерних блоков добавления персонажей игроку для игры (dataPlayerPt). */
-/* блок выбора первого игрока */
-
-/* блок выбора второго игрока */
-
 /* класс для блоков выбора игроков */
 .blockPlayer {
     width: 50%;

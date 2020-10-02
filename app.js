@@ -5,3 +5,8 @@ start.onclick = () => {
     document.getElementById("pageTwo").style.display = "block";
 };
 
+changeTwoPl.onclick = () => {
+    document.getElementById("pageTwo").style.display = "none";
+    document.getElementById("pageThree").style.display = "block";
+}
+

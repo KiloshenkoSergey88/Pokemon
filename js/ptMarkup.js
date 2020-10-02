@@ -41,11 +41,11 @@ const blocksPlayer = {
   secondBlock : '.blockPlayerSecondPt'
 };
 // переменные для работы с кнопкой.
-let changeOnePl = document.querySelector('.changeOnePl');
+let changeOnePl = document.getElementById('changeOnePl');
 let dataChange = blocksPlayer.firstBlock;
 
 // переменная для отключения кнопки подтверждения выбора игрока 1.
-let changeTwoPl = document.querySelector('.changeTwoPl');
+let changeTwoPl = document.getElementById('changeTwoPl');
 
 // с помощью обработчика событий подменяем блок и кнопку 'Accept1' первого игрока на блок и кнопку 'Accept2' второго, обнуляем счетчик.
 changeOnePl.addEventListener('click', toChangeBlocksPlayer);

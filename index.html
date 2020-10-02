@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
-    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="./style/pageOne.css"> <link rel="stylesheet" href="./style/pageTwo.css">
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="/style/pageOne.css"> 
+    <link rel="stylesheet" href="/style/pageTwo.css"> <link rel="stylesheet" href="/style/pageThree.css">
 </head>
 <body>
     <header>
@@ -31,12 +32,17 @@
             </div>
             <!-- нижний блок, часть рабочей области для кнопки подтверждения выбора персонажей. -->
             <div class="botButton">
-                <button class="changeOnePl" name="Accept1" type="button">Accept</button>
-                <button class="changeTwoPl" name="Accept2" type="button">Accept</button>
+                <button id="changeOnePl" name="Accept1" type="button">Accept</button>
+                <button id="changeTwoPl" name="Accept2" type="button">Accept</button>
             </div>
+        </div>
+            <!-- страница игрового поля -->
+        <div id="pageThree">
+
         </div>
     </header>
     <script src="app.js"></script>
     <script src="./js/ptMarkup.js"></script>
+    <script src="/js/dataCharacters.js"></script>
 </body>
 </html>
