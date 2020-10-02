@@ -23,15 +23,27 @@
     display: flex;
     justify-content: center;
 }
-/* кнопка выбора. */
-#change {
+/* 2 кнопки выбора. */
+.changeOnePl {
     height: 50px;
     width: 100px;
     background: fixed;
     border: 1px outset black;
     cursor: pointer;
 }
-#change:active{
+.changeOnePl:active{
+    padding-top:2px;
+    padding-left:2px;
+}
+.changeTwoPl {
+    height: 50px;
+    width: 100px;
+    background: fixed;
+    border: 1px outset black;
+    cursor: pointer;
+    display: none;
+}
+.changeTwoPl:active{
     padding-top:2px;
     padding-left:2px;
 }
@@ -67,5 +79,6 @@
     width: 50%;
     border: 2px solid blueviolet;
     display: inherit;
+    align-items: center;
 }
 

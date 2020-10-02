@@ -14,7 +14,7 @@ const data =
     './img/011Butterfree.png',
     './img/012Weedle.png'];
 
-    // создание карточек на основе добавления елемента "img" в ДОМ-дерево.
+    // создание карточек на основе добавления элемента "img" в ДОМ-дерево.
 let markup = document.getElementById('sidePt');
 
 function Card() {
@@ -33,6 +33,30 @@ function Card() {
 };
 markup.append(Card());
 
+// переход хода выбора персонажа от первого игрока ко второму.
+// объект с селекторами двух классов для дивов игроков.
+const blocksPlayer = {
+  
+  firstBlock : '.blockPlayerFirstPt',
+  secondBlock : '.blockPlayerSecondPt'
+};
+// переменные для работы с кнопкой.
+let changeOnePl = document.querySelector('.changeOnePl');
+let dataChange = blocksPlayer.firstBlock;
+
+// переменная для отключения кнопки подтверждения выбора игрока 1.
+let changeTwoPl = document.querySelector('.changeTwoPl');
+
+// с помощью обработчика событий подменяем блок и кнопку 'Accept1' первого игрока на блок и кнопку 'Accept2' второго, обнуляем счетчик.
+changeOnePl.addEventListener('click', toChangeBlocksPlayer);
+
+function toChangeBlocksPlayer() {
+  dataChange = blocksPlayer.secondBlock;
+  count = 0;
+  changeOnePl.style.display = "none";
+  changeTwoPl.style.display = "inline-block";
+};
+
 // count переменная-счетчик для определения выбора количевства персонажей для игры.
 // обработчик событий на класс 'card' при нажатии на карту - переносит ёё в блок к игроку.
 let count = 0;
@@ -41,7 +65,7 @@ document.querySelectorAll('.card').forEach((el) => {
     if (count < 3) {
       count++;
       let addCard = e.srcElement;
-      let dataPlayerPt = document.querySelector('.blockPlayerFirstPt');
+      let dataPlayerPt = document.querySelector(dataChange);
       dataPlayerPt.append(addCard);
       // отключение обработчика и визуализации добавленной карты (под средством смены класса у объекта).
       el.onclick = null;
