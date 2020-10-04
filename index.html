@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
-    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="/style/pageOne.css"> 
-    <link rel="stylesheet" href="/style/pageTwo.css"> <link rel="stylesheet" href="/style/pageThree.css">
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="./style/pageOne.css"> 
+    <link rel="stylesheet" href="./style/pageTwo.css"> <link rel="stylesheet" href="./style/pageThree.css">
 </head>
 <body>
     <header>
@@ -13,7 +13,7 @@
         <div id="pageOne">
             <input id="start" type="button" value="START">
         </div>
-        <!-- страница выбора персонажей -->
+        <!-- страница выбора персонажей. -->
         <div id="pageTwo">
             <!-- верхний блок для подтверждения выбора персонажа. -->
             <div id="dataPlayerPt">
@@ -36,13 +36,37 @@
                 <button id="changeTwoPl" name="Accept2" type="button">Accept</button>
             </div>
         </div>
-            <!-- страница игрового поля -->
+        <!-- страница игрового поля -->
         <div id="pageThree">
-
+            <div id="mainPth">
+                <div class="windowPl">
+                    <div class="topPanelPth">1</div>
+                    <div class="playFieldPth">
+                        <div class="pFPthChar">
+                            d
+                        </div>
+                        <div class="pFPthGame">
+                            a
+                        </div>
+                    </div>
+                </div>
+                <div class="windowPl">
+                    <div class="topPanelPth">1</div>
+                    <div class="playFieldPth">
+                        <div class="pFPthGame">
+                            f
+                        </div>
+                        <div class="pFPthChar">
+                            b
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="windowEvent">2</div>
         </div>
     </header>
     <script src="app.js"></script>
     <script src="./js/ptMarkup.js"></script>
-    <script src="/js/dataCharacters.js"></script>
+    <script src="./js/dataCharacters.js"></script>
 </body>
 </html>

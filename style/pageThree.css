@@ -1,0 +1,41 @@
+#pageThree {
+    display: none;
+    background-color: rgb(70, 124, 168);
+}
+
+#mainPth {
+    height: 80vh;
+    display: flex;
+}
+
+#windowEvent {
+    height: 19.62vh;
+    border: 2px whitesmoke solid;
+    background-color: rgb(126, 114, 98);
+}
+
+.windowPl {
+    width: 50%;
+    border: 1px white solid;
+}
+
+.topPanelPth {
+    height: 20%;
+    background-color: rgb(126, 114, 98);
+}
+
+.playFieldPth {
+    height: 80%;
+    border: 1px white ridge;
+    display: flex;
+}
+
+.pFPthChar {
+    width: 30%;
+}
+
+.pFPthGame {
+    width: 70%;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+}

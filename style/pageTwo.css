@@ -1,14 +1,11 @@
 /* страница 2. */
 #pageTwo {
     display: none;
-    align-items: center;
-    align-content: center; 
-    justify-content: center; 
     background-color: orangered;
 }
 /*  блок для добавления персонажей игроку для игры. */
 #dataPlayerPt {
-    min-height: 120px;
+    min-height: 110px;
     display: flex;
 }
 /* блок с карточками. */
