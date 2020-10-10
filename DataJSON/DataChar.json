@@ -1,0 +1,28 @@
+{ "Pokemons" :    
+    {
+        "id": 0,
+        "name": "Bulbasaur",
+        "body": "./img/000Bulbasaur.png",
+        "level": "1",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "stats" : {
+            "HP": "2",
+            "attack": "3",
+            "defend": "2",
+            "typeAttack": "3",
+            "speed" : "3",
+            "allStats": "3"
+        },
+        "force" : {
+            "grassA" :"3",
+            "poisonA" :"3",
+            "ultimateA" :"6",
+            "block" : "2",
+            "addBlock" : "4",
+            "autoA" : "2"
+        }
+    }
+}
