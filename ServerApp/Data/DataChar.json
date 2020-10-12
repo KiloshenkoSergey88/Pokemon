@@ -1,28 +1,341 @@
-{ "Pokemons" :    
-    {
-        "id": 0,
-        "name": "Bulbasaur",
-        "body": "./img/000Bulbasaur.png",
-        "level": "1",
-        "type": [
-            "grass",
-            "poison"
-        ],
-        "stats" : {
-            "HP": "2",
-            "attack": "3",
-            "defend": "2",
-            "typeAttack": "3",
-            "speed" : "3",
-            "allStats": "3"
+{   "Pokemons" : 
+    [       
+        {
+            "name": "Bulbasaur",
+            "body": "./img/000Bulbasaur.png",
+            "level": "1",
+            "type": [
+                "grass",
+                "poison"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
         },
-        "force" : {
-            "grassA" :"3",
-            "poisonA" :"3",
-            "ultimateA" :"6",
-            "block" : "2",
-            "addBlock" : "4",
-            "autoA" : "2"
+
+        {
+            "name": "Ivysaur",
+            "body": "./img/001Ivysaur.png",
+            "level": "2",
+            "type": [
+                "grass",
+                "poison"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
+        },
+
+        {
+            "name": "Venusaur",
+            "body": "./img/002Venusaur.png",
+            "level": "3",
+            "type": [
+                "grass",
+                "poison"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
+        },
+
+        {
+            "name": "Charmander",
+            "body": "./img/003Charmander.png",
+            "level": "1",
+            "type": [
+                "fire",
+                "normal"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
+        },
+
+        {
+            "name": "Charmeleon",
+            "body": "./img/004Charmeleon.png",
+            "level": "2",
+            "type": [
+                "fire",
+                "normal"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
+        },
+
+        {
+            "name": "Charizard",
+            "body": "./img/005Charizard.png",
+            "level": "3",
+            "type": [
+                "fire",
+                "fly"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
+        },
+
+        {
+            "name": "Squirtle",
+            "body": "./img/006Squirtle.png",
+            "level": "1",
+            "type": [
+                "water",
+                "normal"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
+        },
+
+        {
+            "name": "Wartortle",
+            "body": "./img/007Wartortle.png",
+            "level": "2",
+            "type": [
+                "water",
+                "normal"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
+        },
+
+        {
+            "name": "Blastoise",
+            "body": "./img/008Blastoise.png",
+            "level": "3",
+            "type": [
+                "water",
+                "normal"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
+        },
+
+        {
+            "name": "Caperpie",
+            "body": "./img/009Caterpie.png",
+            "level": "1",
+            "type": [
+                "grass",
+                "bug"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
+        },
+
+        {
+            "name": "Metapod",
+            "body": "./img/010Metapod.png",
+            "level": "2",
+            "type": [
+                "grass",
+                "ground"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
+        },
+
+        {
+            "name": "Butterfree",
+            "body": "./img/011Butterfree.png",
+            "level": "3",
+            "type": [
+                "grass",
+                "fly"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
+        },
+
+        {
+            "name": "Weedle",
+            "body": "./img/012Weedle.png",
+            "level": "1",
+            "type": [
+                "grass",
+                "poison"
+            ],
+            "stats" : {
+                "HP": "2",
+                "attack": "3",
+                "defend": "2",
+                "typeAttack": "3",
+                "speed" : "3",
+                "allStats": "3"
+            },
+            "force" : {
+                "grassA" :"3",
+                "poisonA" :"3",
+                "ultimateA" :"6",
+                "block" : "2",
+                "addBlock" : "4",
+                "autoA" : "2"
+            }
         }
-    }
+    ]
 }
