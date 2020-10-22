@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
-    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="./style/pageOne.css"> 
-    <link rel="stylesheet" href="./style/pageTwo.css"> <link rel="stylesheet" href="./style/pageThree.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css"> <link rel="stylesheet" type="text/css" href="./style/pageOne.css"> 
+    <link rel="stylesheet" type="text/css" href="./style/pageTwo.css"> <link rel="stylesheet" type="text/css" href="./style/pageThree.css">
 </head>
 <body>
     <header>
@@ -42,7 +43,7 @@
                 <div class="windowPl">
                     <div class="topPanelPth" id="topPanelPth1p"></div>
                     <div class="playFieldPth">
-                        <div class="pFPthChar">
+                        <div class="pFPthChar" id="charAddP1">
                             p
                         </div>
                         <div class="pFPthGame">
@@ -56,7 +57,7 @@
                         <div class="pFPthGame">
                             f
                         </div>
-                        <div class="pFPthChar">
+                        <div class="pFPthChar" id="charAddP2">
                             b
                         </div>
                     </div>
@@ -67,6 +68,6 @@
     </header>
     <script src="app.js"></script>
     <script src="./js/ptMarkup.js"></script>
-    <!-- <script src="./js/PageThree.js"></script> -->
+    <script src="./js/changeChar.js"></script>
 </body>
 </html>

@@ -69,7 +69,12 @@ document.querySelectorAll('.card').forEach((el) => {
       dataPlayerPt.append(addCard);
       // отключение обработчика и визуализации добавленной карты (под средством смены класса у объекта).
       el.onclick = null;
-      el.className = 'addCard';
+
+      if (dataChange === blocksPlayer.firstBlock) {
+        el.className = 'addCard1';
+      } else {
+        el.className = 'addCard2';
+      };
     };
   };
 });
