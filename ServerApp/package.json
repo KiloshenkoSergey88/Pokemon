@@ -2,7 +2,8 @@
   "name": "serverapp",
   "version": "1.0.0",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^2.0.6"
   },
   "main": "server.js",
   "scripts": {

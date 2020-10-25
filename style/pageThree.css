@@ -38,4 +38,24 @@
     width: 70%;
     border-left: 1px white solid;
     border-right: 1px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.butt {
+    height: 40%;
+    display: inline-block;
+}
+
+.gamePad {
+    width: 98%;
+    margin: 1%;
 }
