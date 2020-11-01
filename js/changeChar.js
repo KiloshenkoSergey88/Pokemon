@@ -27,3 +27,10 @@ function hide1(e){
 
 topPanelPth1p.addEventListener('click', hide0, false);
 topPanelPth2p.addEventListener('click', hide1, false);
+
+
+socket.on('message', function(char){
+  console.log(char);
+
+  
+});

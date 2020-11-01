@@ -2,13 +2,8 @@
 start.onclick = () => {
     document.getElementById("pageOne").style.display = "none";
     document.getElementById("pageTwo").style.display = "block";
+
     
-    const socket = io();
-
-    let test = prompt("Напиши что-нибудь, а я угадаю", '');
-    socket.emit('clientEvent', test);
-
-    socket.on('message', function(data){alert(data)});
 };
 
 changeTwoPl.onclick = () => {
