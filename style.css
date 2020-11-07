@@ -10,3 +10,10 @@ body {
     background-color:orangered;
     
 }
+
+#preloader {
+    display: none;
+    position: fixed;
+    left: 40%;
+    top: 30%;
+}

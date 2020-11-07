@@ -1,7 +1,13 @@
 // скрипт для перехода с начальной страницы на страницу выбора.
 start.onclick = () => {
-    document.getElementById("pageOne").style.display = "none";
-    document.getElementById("pageTwo").style.display = "block";
+    pageOne.style.display = "none";
+    
+    preloader.style.display = "block";
+
+    setTimeout(() => {
+            preloader.style.display = "none";
+            pageTwo.style.display = "block";
+    },1000);
 
     
 };

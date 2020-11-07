@@ -10,6 +10,34 @@ io.on('connection', function(socket) {
 
     socket.send(dataChar);
 
+    socket.on('clientEventA', function(data) {
+        for (let i = 0; i < dataChar.length; i++) {
+            const el = dataChar[i].id;
+            if (el == data) {
+                socket.emit('serverEventA', {
+                    char: dataChar[i]    
+                });
+            }
+            
+        }
+    });
+
+    socket.on('clientEventB', function(data) {
+        for (let i = 0; i < dataChar.length; i++) {
+            const el = dataChar[i].id;
+            if (el == data) {
+                socket.emit('serverEventB', {
+                    char: dataChar[i]    
+                });
+            }
+            
+        }
+    });
+    
+
+
+    
+
 
 
     socket.on('disconnect', function () {

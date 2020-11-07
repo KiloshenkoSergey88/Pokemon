@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <span id="preloader"><img src="./img/preloader/preload.gif" alt="load content."/></span>
         <!-- начальная страница игры. -->
         <div id="pageOne">
             <input id="start" type="button" value="START">
@@ -44,13 +45,14 @@
                     <div class="topPanelPth" id="topPanelPth1p"></div>
                     <div class="playFieldPth">
                         <div class="pFPthChar" id="statsButP1">
+                            <div id="nameCharP1" class="nameChar">Pokemon</div>
                             <div class="stats">
                                 <div class="statCard">
-                                    <div class="battleStatData">Жизни:</div><div class="battleStatValue">2</div>
-                                    <div class="battleStatData">Атака:</div><div class="battleStatValue">4</div>
-                                    <div class="battleStatData">Защита:</div><div class="battleStatValue">5</div>
-                                    <div class="battleStatData">Ст.Атака:</div><div class="battleStatValue">6</div>
-                                    <div class="battleStatData">Скорость:</div><div class="battleStatValue">3</div>
+                                    <div class="battleStatData">Жизни:</div><div class="battleStatValue" id="BSVhealthP1"></div>
+                                    <div class="battleStatData">Атака:</div><div class="battleStatValue" id="BSVattackP1"></div>
+                                    <div class="battleStatData">Защита:</div><div class="battleStatValue" id="BSVdefendP1"></div>
+                                    <div class="battleStatData">Ст.Атака:</div><div class="battleStatValue" id="BSVstAttackP1"></div>
+                                    <div class="battleStatData">Скорость:</div><div class="battleStatValue" id="BSVspeedP1"></div>
                                 </div>
                             </div>
                             <div class="butt">
@@ -74,13 +76,14 @@
 
                         </div>
                         <div class="pFPthChar" id="statsButP2">
+                            <div id="nameCharP2" class="nameChar">Pokemon</div>
                             <div class="stats">
                                 <div class="statCard">
-                                    <div class="battleStatData">Жизни:</div><div class="battleStatValue">2</div>
-                                    <div class="battleStatData">Атака:</div><div class="battleStatValue">4</div>
-                                    <div class="battleStatData">Защита:</div><div class="battleStatValue">5</div>
-                                    <div class="battleStatData">Ст.Атака:</div><div class="battleStatValue">6</div>
-                                    <div class="battleStatData">Скорость:</div><div class="battleStatValue">3</div>
+                                    <div class="battleStatData">Жизни:</div><div class="battleStatValue" id="BSVhealthP2"></div>
+                                    <div class="battleStatData">Атака:</div><div class="battleStatValue" id="BSVattackP2"></div>
+                                    <div class="battleStatData">Защита:</div><div class="battleStatValue" id="BSVdefendP2"></div>
+                                    <div class="battleStatData">Ст.Атака:</div><div class="battleStatValue" id="BSVstAttackP2"></div>
+                                    <div class="battleStatData">Скорость:</div><div class="battleStatValue" id="BSVspeedP2"></div>
                                 </div>
                             </div>
                             <div class="butt">

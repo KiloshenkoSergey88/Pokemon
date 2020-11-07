@@ -62,10 +62,10 @@
 
 .statCard{
     display: grid;
-    width: 30%;
+    width: 35%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2vw;
+    grid-gap: 1vw;
 }
 
 .battleStatData {
@@ -75,4 +75,14 @@
 
 .battleStatValue {
     color: darkorange;
+}
+
+.pFPthGame img {
+    width: 150px;
+    height: 150px;
+}
+
+.nameChar {
+    text-align: center;
+    margin-top: 2px;
 }
