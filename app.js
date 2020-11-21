@@ -7,7 +7,7 @@ start.onclick = () => {
     setTimeout(() => {
             preloader.style.display = "none";
             pageTwo.style.display = "block";
-    },1000);
+    },2000);
 
     
 };

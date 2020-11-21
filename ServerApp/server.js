@@ -4,7 +4,10 @@ const   express = require("express"),
         io = require('socket.io')(http),
         dataChar = require('./Data/DataChar.json');
 
-app.use("/", express.static("d:/JS/Pokemon"));
+app.use("/", express.static(__dirname + "/Reg"));
+app.use("/game", express.static("d:/JS/Pokemon"));
+
+
 io.on('connection', function(socket) {
     console.log('A user connected');
 
@@ -14,8 +17,9 @@ io.on('connection', function(socket) {
         for (let i = 0; i < dataChar.length; i++) {
             const el = dataChar[i].id;
             if (el == data) {
+                
                 socket.emit('serverEventA', {
-                    char: dataChar[i]    
+                    char: dataChar[i]
                 });
             }
             

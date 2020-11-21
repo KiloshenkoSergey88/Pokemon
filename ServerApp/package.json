@@ -10,6 +10,6 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Kiloshenko Sergey",
   "license": "ISC"
 }
