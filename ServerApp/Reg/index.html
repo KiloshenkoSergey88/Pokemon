@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Pokemon</title>
 </head>
 <body>
     <header>
-        <form id="reg">
+        <form id="reg" action="/reg" method="POST">
             <div id="regTop"></div>
             <div id="regMid">
+                <label for="regEmailId">Email</label>
+                <input type="email" name="regEmail" id="regEmailId">
                 <label for="regNickId">Nickname</label>
                 <input type="text" name="regNick" id="regNickId">
                 <label for="regPassId">Password</label>
                 <input type="password" name="regPass" id="regPassId">
-                <input type="button" value="Sign up" id="regBtnId">
+                <label for="regCPassId">Confirm Password</label>
+                <input type="password" name="regCPass" id="regCPassId">
+                <button type="submit" id="regBtnId">Sign up</button>
             </div>
             <div id="regBot"></div>
         </form>
-        <form id="auth"></form>
-        <div id="bgReg"></div>
+        <form id="auth" action="/auth" method="POST">
+            <div id="authTop"></div>
+            <div id="authMid">
+                <label for="authNickId">Nickname</label>
+                <input type="text" name="authNick" id="authNickId">
+                <label for="authPassId">Password</label>
+                <input type="password" name="authPass" id="authPassId">
+                <button type="submit" id="authBtnId">Sign in</button>
+            </div>
+            <div id="authBot"></div>
+        </form>
+        <div id="bgForm"></div>
     </header>
     <script src="./main.js"></script>
 </body>

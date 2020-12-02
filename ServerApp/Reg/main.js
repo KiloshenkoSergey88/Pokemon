@@ -1,4 +1,6 @@
-regBtnId.onclick = () => {
-    window.history.replaceState(null, null, '/game');
-    location.href=location.href;
-}
+document.addEventListener("DOMContentLoaded", () => {
+    regEmailId.value = "";
+    regNickId.value = "";
+    regPassId.value = "";
+    regCPassId.value = "";
+});

@@ -1,15 +1,51 @@
-const   express = require("express"),
+const   express = require('express'),
         app = express(),
         http = require('http').Server(app),
         io = require('socket.io')(http),
-        dataChar = require('./Data/DataChar.json');
+        dataChar = require('./Data/DataChar.json'),
+        bodyParser = require('body-parser'),
+        pgp = require("pg-promise")(/*options*/);
+
+const cn = {
+    host: 'localhost',
+    port: 5432,
+    database: 'usersdb',
+    user: 'emercasa',
+    password: '26081986Ktyf'
+};
+const db = pgp(cn);
 
 app.use("/", express.static(__dirname + "/Reg"));
-app.use("/game", express.static("d:/JS/Pokemon"));
+app.use("/game/:id", express.static("d:/JS/Pokemon"));
+
+const urlPars = bodyParser.urlencoded({extended: false});
+app.post("/reg", urlPars, function (req, res) {
+
+    const query = 'SELECT * FROM users WHERE nickname = $1 LIMIT 1;';
+    db.one(query, [req.body.regNick])
+    .then(function (data) {
+        console.log(data.nickname, req.body.regNick);
+        if (data.nickname == req.body.regNick) {
+            res.send('Login is found');
+        } 
+    })
+    .catch(function () {
+        db.one('INSERT INTO users(nickname, password, email, datereg) VALUES($1, $2, $3, $4) RETURNING nickname', [req.body.regNick, req.body.regPass, req.body.regEmail, new Date()])
+        .then(function (data) {
+            console.log(data);
+            global.login = data.nickname;
+            res.redirect(301, `../game/${login}`);
+        })
+        .catch(function (error) {
+            console.log("ERROR:", error);
+        });
+    console.log(req.body);
+    });
+});
 
 
 io.on('connection', function(socket) {
-    console.log('A user connected');
+    console.log(`${global.login} is connected`, socket);
 
     socket.send(dataChar);
 
